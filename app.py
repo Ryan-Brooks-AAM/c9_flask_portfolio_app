@@ -15,7 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	new_name = name + " Welcome to my Flask Portfolio homepage. "
+	new_name = " Welcome to my Flask Portfolio homepage " + name + "!"
 	return render_template('index.html', name=new_name)
 
 
